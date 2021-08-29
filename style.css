@@ -1,0 +1,8 @@
+.border{
+    border: 2px dotted rgb(211, 209, 209) !important;
+    border-bottom-left-radius: 100% !important;
+}
+.border1{
+    border: 2px dotted rgb(247, 244, 244) !important;
+    border-bottom-right-radius: 100% !important;
+}
