@@ -25,13 +25,13 @@ function updateQuantity(e)
   var tr = e.target.parentElement.parentElement;
   var id = tr.getAttribute("data-id");
   var quantity = e.target.value;
-    for (let product of products) {
-      if (product.id == id) {
-        product.noOfQnty = quantity;
-        product.itemTotal = quantity * product.price;
-        tr.childNodes[3].innerText = product.itemTotal;
-      }
+  for (let product of products) {
+    if (product.id == id) {
+      product.noOfQnty = quantity;
+      product.itemTotal = quantity * product.price;
+      tr.childNodes[3].innerText = product.itemTotal;
     }
+  }
   calculateTotal();
 }
 function calculateTotal()
@@ -58,10 +58,11 @@ $.typeahead({
     product: {
       display: "productName",
       data: [
-        { "id": 1, "productName": "Frouit", "price": 125.00 },
+        { "id": 1, "productName": "Noodles", "price": 125.00 },
         { "id": 2, "productName": "Oil", "price": 150.00 },
         { "id": 3, "productName": "Rice", "price": 55.00 },
-        { "id": 4, "productName": "Egg", "price": 100.00 }
+        { "id": 4, "productName": "Egg", "price": 10.00 },
+        { "id": 4, "productName": "Pen", "price": 5.00 }
       ],
     },
   },
